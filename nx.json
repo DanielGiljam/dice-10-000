@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "10k",
+  "npmScope": "dice-10-000",
   "affected": {
     "defaultBase": "main"
   },
