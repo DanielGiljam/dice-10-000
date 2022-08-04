@@ -3,3 +3,4 @@
 /.yarn
 /dist
 /coverage
+*.typegen.ts

@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "emulate": "firebase emulators:start --import firebase-emulators-data --export-on-exit"
+    "emulate": "firebase emulators:start --import firebase-emulators-data --export-on-exit",
+    "postinstall": "xstate typegen **/*.typegen.ts"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,9 @@
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
+    "@xstate/cli": "^0.3.1",
+    "@xstate/inspect": "^0.7.0",
+    "@xstate/react": "^3.0.0",
     "babel-jest": "27.5.1",
     "cypress": "^10.2.0",
     "eslint": "~8.15.0",
@@ -52,12 +56,15 @@
     "firebase-tools": "^11.4.0",
     "jest": "27.5.1",
     "nx": "14.5.1",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.6.2",
     "react-firebaseui": "^6.0.0",
     "react-test-renderer": "18.2.0",
+    "rxjs": "^7.5.6",
     "ts-jest": "27.1.4",
     "ts-node": "~10.8.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "xstate": "^4.32.1"
   },
   "packageManager": "yarn@3.2.2"
 }

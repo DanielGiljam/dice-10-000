@@ -5,7 +5,7 @@
     "next/core-web-vitals",
     "../../.eslintrc.json"
   ],
-  "ignorePatterns": ["!**/*"],
+  "ignorePatterns": ["!**/*", "*.typegen.ts"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
