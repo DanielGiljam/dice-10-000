@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Login } from '../src/components';
+import { Login } from '../components';
 
 const StyledPage = styled.div`
   .page {
