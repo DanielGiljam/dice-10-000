@@ -1640,6 +1640,17 @@ __metadata:
 "@dice-10-000/nextjs-app@workspace:apps/nextjs-app":
   version: 0.0.0-use.local
   resolution: "@dice-10-000/nextjs-app@workspace:apps/nextjs-app"
+  dependencies:
+    "@xstate/cli": ^0.3.1
+    "@xstate/inspect": ^0.7.0
+    "@xstate/react": ^3.0.0
+    autoprefixer: ^10.4.8
+    firebase: ^9.9.1
+    postcss: ^8.4.14
+    react-firebaseui: ^6.0.0
+    rxjs: ^7.5.6
+    tailwindcss: ^3.1.7
+    xstate: ^4.32.1
   languageName: unknown
   linkType: soft
 
@@ -7310,10 +7321,6 @@ __metadata:
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": ^5.29.0
     "@typescript-eslint/parser": ^5.29.0
-    "@xstate/cli": ^0.3.1
-    "@xstate/inspect": ^0.7.0
-    "@xstate/react": ^3.0.0
-    autoprefixer: ^10.4.8
     babel-jest: 27.5.1
     core-js: ^3.6.5
     cypress: ^10.2.0
@@ -7325,26 +7332,20 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.6.1
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
-    firebase: ^9.9.1
     firebase-tools: ^11.4.0
     jest: 27.5.1
     next: 12.2.3
     nx: 14.5.1
-    postcss: ^8.4.14
     postinstall-postinstall: ^2.1.0
     prettier: ^2.6.2
     react: 18.2.0
     react-dom: 18.2.0
-    react-firebaseui: ^6.0.0
     react-test-renderer: 18.2.0
     regenerator-runtime: 0.13.7
-    rxjs: ^7.5.6
-    tailwindcss: ^3.1.7
     ts-jest: 27.1.4
     ts-node: ~10.8.0
     tslib: ^2.3.0
     typescript: ~4.7.2
-    xstate: ^4.32.1
   languageName: unknown
   linkType: soft
 
