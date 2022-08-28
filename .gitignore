@@ -47,12 +47,9 @@ Thumbs.db
 !.yarn/sdks
 !.yarn/versions
 
-# Firebase
-/firebase-emulators-data
-firebase-debug.log
-firestore-debug.log
-ui-debug.log
-.firebaserc
-
 # XState Typegen
 *.typegen.ts
+
+# Local .env files
+
+.env.local
