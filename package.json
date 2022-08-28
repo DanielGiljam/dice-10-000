@@ -6,8 +6,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "emulate": "firebase emulators:start --import firebase-emulators-data --export-on-exit",
-    "postinstall": "xstate typegen **/*.ts"
+    "emulate": "firebase emulators:start --import firebase-emulators-data --export-on-exit"
   },
   "private": true,
   "dependencies": {
