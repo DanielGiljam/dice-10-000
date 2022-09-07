@@ -7,10 +7,12 @@ export const Auth: React.FC = () => (
     <header>
       <h1 className={'text-2xl'}>Dice 10 000</h1>
     </header>
-    <SupabaseAuth
-      supabaseClient={supabase}
-      className={'max-w-md w-full'}
-      providers={['google', 'github']}
-    />
+    <main>
+      <SupabaseAuth
+        supabaseClient={supabase}
+        className={'max-w-md w-full'}
+        providers={['google', 'github']}
+      />
+    </main>
   </div>
 );
