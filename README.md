@@ -20,4 +20,5 @@ This project is managed as a monorepo using [Nx](https://nx.dev). See [`docs/NX_
 
 ## Specifications
 
+- [Draft 2 – 2022-09](docs/specification/DRAFT_2.md) (current 📍, WIP 🚧)
 - [Draft 1 – 2022-07](docs/specification/DRAFT_1.md)
