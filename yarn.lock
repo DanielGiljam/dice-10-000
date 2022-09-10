@@ -1738,6 +1738,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dice-10-000/create-test-data@workspace:apps/create-test-data":
+  version: 0.0.0-use.local
+  resolution: "@dice-10-000/create-test-data@workspace:apps/create-test-data"
+  languageName: unknown
+  linkType: soft
+
 "@dice-10-000/nextjs-app-e2e@workspace:apps/nextjs-app-e2e":
   version: 0.0.0-use.local
   resolution: "@dice-10-000/nextjs-app-e2e@workspace:apps/nextjs-app-e2e"
