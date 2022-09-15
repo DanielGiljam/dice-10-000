@@ -7,6 +7,7 @@ import { createTurn } from './createTurn';
 import { playRoll, Roll } from './rolls';
 import { Turn } from './Turn';
 import { updateTurn } from './updateTurn';
+import { makeDecisionAboutYielding } from './makeDecisionAboutYielding';
 
 export interface TurnWithEverything {
   turn: Turn;
@@ -29,8 +30,9 @@ export const playTurn = async (
   let numberOfDice = 6;
   let accumulatedPoints = 0;
   let nullOutcome = false;
+  let isYielding = false;
   const rolls: Roll[] = [];
-  while (!nullOutcome) {
+  while (!(nullOutcome || isYielding)) {
     const roll = await playRoll(
       supabase,
       game,
@@ -52,6 +54,12 @@ export const playTurn = async (
       accumulatedPoints += roll.locked_dice.reduce(
         (aggregate, current) => aggregate + current.points,
         0
+      );
+      isYielding = makeDecisionAboutYielding(
+        playerPoints[player.id],
+        numberOfDice,
+        accumulatedPoints,
+        rolls.length
       );
     } else {
       nullOutcome = true;
