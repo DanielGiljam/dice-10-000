@@ -36,5 +36,8 @@ export const playRound = async (
   const update = { ended_at: new Date() };
   const updatedRound = await updateRound(supabase, round, update);
   console.log(`finished round ${index + 1} in game ${game.name}`);
+  for (const player of gameWithPlayers.players) {
+    console.log(`  ${player.name}: ${playerPoints[player.id]}`);
+  }
   return { round: updatedRound, turns };
 };

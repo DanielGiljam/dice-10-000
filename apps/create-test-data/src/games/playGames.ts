@@ -27,6 +27,9 @@ export const playGames = async (
     const update = { ended_at: new Date() };
     const updatedGame = await updateGame(supabase, game, update);
     console.log('finished game', game.name);
+    for (const player of players) {
+      console.log(`  ${player.name}: ${playerPoints[player.id]}`);
+    }
     gamesWithEverything.push({ game: updatedGame, players, rounds });
   }
   return gamesWithEverything;
