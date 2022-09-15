@@ -9,20 +9,13 @@
       "options": {
         "outputPath": "dist/apps/create-test-data",
         "main": "apps/create-test-data/src/main.ts",
-        "tsConfig": "apps/create-test-data/tsconfig.app.json",
-        "assets": ["apps/create-test-data/src/assets"]
+        "tsConfig": "apps/create-test-data/tsconfig.app.json"
       },
       "configurations": {
         "production": {
           "optimization": true,
           "extractLicenses": true,
-          "inspect": false,
-          "fileReplacements": [
-            {
-              "replace": "apps/create-test-data/src/environments/environment.ts",
-              "with": "apps/create-test-data/src/environments/environment.prod.ts"
-            }
-          ]
+          "inspect": false
         }
       }
     },
@@ -35,6 +28,12 @@
         "production": {
           "buildTarget": "create-test-data:build:production"
         }
+      }
+    },
+    "type-check": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "tsc --build apps/create-test-data/tsconfig.json --incremental"
       }
     },
     "lint": {

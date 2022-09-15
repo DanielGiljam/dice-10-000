@@ -2,5 +2,9 @@
   "name": "@dice-10-000/create-test-data",
   "version": "0.0.0",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "@supabase/supabase-js": "^1.35.6"
+  }
 }
