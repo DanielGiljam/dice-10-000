@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "postinstall": "patch-package"
   },
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
     "@nrwl/next": "14.5.1",
     "core-js": "^3.6.5",
     "next": "12.2.3",
+    "patch-package": "^6.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "regenerator-runtime": "0.13.7",

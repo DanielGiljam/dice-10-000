@@ -1,0 +1,22 @@
+diff --git a/node_modules/@nrwl/workspace/src/utilities/buildable-libs-utils.js b/node_modules/@nrwl/workspace/src/utilities/buildable-libs-utils.js
+index a16e2c2..f741866 100644
+--- a/node_modules/@nrwl/workspace/src/utilities/buildable-libs-utils.js
++++ b/node_modules/@nrwl/workspace/src/utilities/buildable-libs-utils.js
+@@ -14,7 +14,7 @@ function isBuildable(target, node) {
+         node.data.targets[target].executor !== '');
+ }
+ function calculateProjectDependencies(projGraph, root, projectName, targetName, configurationName, shallow) {
+-    const target = projGraph.nodes[projectName];
++    const target = projGraph?.nodes[projectName];
+     // gather the library dependencies
+     const nonBuildableDependencies = [];
+     const topLevelDependencies = [];
+@@ -66,7 +66,7 @@ function calculateProjectDependencies(projGraph, root, projectName, targetName,
+ }
+ exports.calculateProjectDependencies = calculateProjectDependencies;
+ function collectDependencies(project, projGraph, acc, shallow, areTopLevelDeps = true) {
+-    (projGraph.dependencies[project] || []).forEach((dependency) => {
++    (projGraph?.dependencies[project] || []).forEach((dependency) => {
+         if (!acc.some((dep) => dep.name === dependency.target)) {
+             acc.push({ name: dependency.target, isTopLevel: areTopLevelDeps });
+             if (!shallow) {
