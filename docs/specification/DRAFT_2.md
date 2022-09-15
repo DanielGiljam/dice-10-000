@@ -137,7 +137,7 @@ interface Roll {
   game: Game;
   ended_at: Date | undefined;
   outcome: DieFace[];
-  locked_dices: DiceSubset[];
+  locked_dice: DiceSubset[];
 }
 ```
 

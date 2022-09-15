@@ -130,7 +130,7 @@ interface Roll {
   game: Game | ObjectId;
   endedAt: Date | undefined;
   outcome: DieFace[];
-  lockedDices: DiceSubset[];
+  lockedDice: DiceSubset[];
 }
 ```
 
