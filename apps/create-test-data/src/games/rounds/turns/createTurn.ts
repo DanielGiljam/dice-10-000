@@ -18,6 +18,6 @@ export const createTurn = async (
     console.error('error when inserting into turns', draft);
     throw result.error;
   }
-  console.log('inserted into turns', result.data);
+  console.log('inserted into turns', result.data[0]);
   return result.data[0];
 };

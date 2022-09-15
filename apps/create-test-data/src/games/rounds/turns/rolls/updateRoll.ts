@@ -15,6 +15,6 @@ export const updateRoll = async (
     console.error('error when updating roll', roll.id, update);
     throw result.error;
   }
-  console.log('updated roll', result.data);
+  console.log('updated roll', result.data[0]);
   return result.data[0];
 };

@@ -15,6 +15,6 @@ export const updateTurn = async (
     console.error('error when updating turn', turn.id, update);
     throw result.error;
   }
-  console.log('updated turn', result.data);
+  console.log('updated turn', result.data[0]);
   return result.data[0];
 };

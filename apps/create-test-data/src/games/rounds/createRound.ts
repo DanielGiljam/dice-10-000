@@ -15,6 +15,6 @@ export const createRound = async (
     console.error('error when inserting into rounds', draft);
     throw result.error;
   }
-  console.log('inserted into rounds', result.data);
+  console.log('inserted into rounds', result.data[0]);
   return result.data[0];
 };

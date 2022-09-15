@@ -27,6 +27,6 @@ export const createRoll = async (
     console.error('error when inserting into rolls', draft);
     throw result.error;
   }
-  console.log('inserted into rolls', result.data);
+  console.log('inserted into rolls', result.data[0]);
   return result.data[0];
 };

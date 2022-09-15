@@ -15,6 +15,6 @@ export const updateRound = async (
     console.error('error when updating round', round.id, update);
     throw result.error;
   }
-  console.log('updated round', result.data);
+  console.log('updated round', result.data[0]);
   return result.data[0];
 };
