@@ -57,7 +57,10 @@ export const playTurn = async (
       nullOutcome = true;
     }
   }
-  if (nullOutcome) {
+  if (
+    nullOutcome ||
+    (playerPoints[player.id] === 0 && accumulatedPoints < 1000)
+  ) {
     accumulatedPoints = 0;
   }
   playerPoints[player.id] += accumulatedPoints;
