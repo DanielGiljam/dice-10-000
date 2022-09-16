@@ -1,6 +1,6 @@
-import { DieFace } from './DieFace';
+import {DieFace} from "./DieFace";
 
 export interface DiceSubset {
-  dieFaces: DieFace[];
-  points: number;
+    dieFaces: DieFace[];
+    points: number;
 }

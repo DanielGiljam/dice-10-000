@@ -1,2 +1,2 @@
-export * from './isNullish';
-export * from './XStateEventsFromTypeMap';
+export * from "./isNullish";
+export * from "./XStateEventsFromTypeMap";

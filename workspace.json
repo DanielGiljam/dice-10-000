@@ -1,9 +1,9 @@
 {
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "create-test-data": "apps/create-test-data",
-    "nextjs-app": "apps/nextjs-app",
-    "nextjs-app-e2e": "apps/nextjs-app-e2e"
-  }
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "create-test-data": "apps/create-test-data",
+        "nextjs-app": "apps/nextjs-app",
+        "nextjs-app-e2e": "apps/nextjs-app-e2e"
+    }
 }

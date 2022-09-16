@@ -1,2 +1,2 @@
-export * from './getPlayers';
-export * from './Player';
+export * from "./getPlayers";
+export * from "./Player";
