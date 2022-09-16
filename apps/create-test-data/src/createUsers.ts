@@ -2,6 +2,10 @@ import { faker } from '@faker-js/faker';
 import { SupabaseClient, User } from '@supabase/supabase-js';
 import { isNullish } from './utils';
 
+export interface UserWithPassword extends User {
+  password: string;
+}
+
 export interface CreateUsersOptions {
   count?: number;
   emailFactory?: (subaddress: string) => string;
@@ -10,12 +14,12 @@ export interface CreateUsersOptions {
 export const createUsers = async (
   supabase: SupabaseClient,
   { count = 8, emailFactory }: CreateUsersOptions = {}
-): Promise<User[]> => {
+): Promise<UserWithPassword[]> => {
   const getEmail = isNullish(emailFactory)
     ? () => faker.internet.email()
     : () => emailFactory(faker.random.alphaNumeric(6));
   const getPassword = () => faker.internet.password();
-  const users: User[] = [];
+  const users: UserWithPassword[] = [];
   for (let i = 0; i < count; i++) {
     const email = getEmail();
     const password = getPassword();
@@ -30,7 +34,7 @@ export const createUsers = async (
       throw result.error;
     }
     console.log('created user', result.data);
-    users.push(result.data);
+    users.push({ ...result.data, password });
   }
   return users;
 };
