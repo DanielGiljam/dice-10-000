@@ -23,6 +23,7 @@ export const createUsers = async (
     const result = await supabase.auth.api.createUser({
       email,
       password,
+      email_confirm: true,
     });
     if (!isNullish(result.error)) {
       console.error('error when creating user', email);
