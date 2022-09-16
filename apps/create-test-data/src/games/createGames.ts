@@ -32,9 +32,12 @@ export const createGames = async (
   }
   console.log('inserted into games', gamesResult.data);
   const playersGamesDrafts = gamesResult.data.flatMap((game) =>
-    randomSubset(
-      players,
-      Math.max(Math.round(Math.random() * players.length), 2)
+    (count === 1
+      ? players
+      : randomSubset(
+          players,
+          Math.max(Math.round(Math.random() * players.length), 2)
+        )
     ).map((player) => ({
       player: player.id,
       game: game.id,
