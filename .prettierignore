@@ -1,6 +1,7 @@
 # Add files here to ignore them from prettier formatting
 
 /.yarn
+/apps/create-test-data/test-data.json
 /dist
 /coverage
 *.typegen.ts
