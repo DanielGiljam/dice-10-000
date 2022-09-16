@@ -97,10 +97,10 @@ $$
     return exists(
       select
         1
-      from public.players_games
+      from public.players_games pg
       where
-        player = player_is_in_game.player and
-        game = player_is_in_game.game
+        pg.player = player_is_in_game.player and
+        pg.game = player_is_in_game.game
     );
   end;
 $$
