@@ -2402,6 +2402,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dice-10-000/react-components-e2e@workspace:apps/react-components-e2e":
+  version: 0.0.0-use.local
+  resolution: "@dice-10-000/react-components-e2e@workspace:apps/react-components-e2e"
+  languageName: unknown
+  linkType: soft
+
 "@dice-10-000/react-components@workspace:libs/react-components":
   version: 0.0.0-use.local
   resolution: "@dice-10-000/react-components@workspace:libs/react-components"
