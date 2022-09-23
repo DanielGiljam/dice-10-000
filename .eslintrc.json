@@ -23,12 +23,18 @@
         },
         {
             "files": ["*.ts", "*.tsx"],
-            "extends": ["plugin:@nrwl/nx/typescript"],
+            "extends": [
+                "plugin:@nrwl/nx/typescript",
+                "@dice-10-000/typescript"
+            ],
             "rules": {}
         },
         {
             "files": ["*.js", "*.jsx"],
-            "extends": ["plugin:@nrwl/nx/javascript"],
+            "extends": [
+                "plugin:@nrwl/nx/javascript",
+                "@dice-10-000/javascript"
+            ],
             "rules": {}
         }
     ]
