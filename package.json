@@ -70,6 +70,7 @@
     "packageManager": "yarn@3.2.2",
     "workspaces": [
         "apps/*",
+        "libs/*",
         "libs/eslint-configs/*"
     ]
 }
