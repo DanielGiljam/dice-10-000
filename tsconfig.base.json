@@ -14,7 +14,11 @@
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "@dice-10-000/react-components": [
+                "libs/react-components/src/index.ts"
+            ]
+        }
     },
     "exclude": ["node_modules", "tmp"]
 }
