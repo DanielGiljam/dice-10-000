@@ -1,10 +1,11 @@
-import {ComponentStory, ComponentMeta} from "@storybook/react";
+import {ComponentMeta, ComponentStory} from "@storybook/react";
+
 import {ReactComponents} from "./ReactComponents";
 
 export default {
     component: ReactComponents,
     title: "ReactComponents",
-} as ComponentMeta<typeof ReactComponents>;
+} as unknown as ComponentMeta<typeof ReactComponents>;
 
 const Template: ComponentStory<typeof ReactComponents> = (args) => (
     <ReactComponents {...args} />

@@ -8,6 +8,7 @@
         "@emotion/styled": "11.9.3"
     },
     "devDependencies": {
+        "@storybook/react": "~6.5.9",
         "@testing-library/react": "13.3.0"
     }
 }
