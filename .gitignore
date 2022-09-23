@@ -51,5 +51,8 @@ Thumbs.db
 *.typegen.ts
 
 # Local .env files
-
 .env.local
+
+# caches
+.eslintcache
+tsconfig.tsbuildinfo
