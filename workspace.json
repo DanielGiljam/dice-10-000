@@ -5,6 +5,7 @@
         "create-test-data": "apps/create-test-data",
         "eslint-configs/javascript": "libs/eslint-configs/javascript",
         "eslint-configs/jsx": "libs/eslint-configs/jsx",
+        "eslint-configs/typescript": "libs/eslint-configs/typescript",
         "nextjs-app": "apps/nextjs-app",
         "nextjs-app-e2e": "apps/nextjs-app-e2e"
     }
