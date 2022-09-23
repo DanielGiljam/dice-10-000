@@ -7,12 +7,12 @@ const StyledReactComponents = styled.div`
     color: pink;
 `;
 
-export function ReactComponents(props: ReactComponentsProps) {
+export const ReactComponents = (_props: ReactComponentsProps) => {
     return (
         <StyledReactComponents>
             <h1>Welcome to ReactComponents!</h1>
         </StyledReactComponents>
     );
-}
+};
 
 export default ReactComponents;

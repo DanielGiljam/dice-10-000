@@ -4,6 +4,12 @@
     "projectType": "library",
     "tags": [],
     "targets": {
+        "type-check": {
+            "executor": "@nrwl/workspace:run-commands",
+            "options": {
+                "command": "tsc --build libs/react-components/tsconfig.json --incremental"
+            }
+        },
         "lint": {
             "executor": "@nrwl/linter:eslint",
             "outputs": ["{options.outputFile}"],

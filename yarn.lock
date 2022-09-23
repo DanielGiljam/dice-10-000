@@ -1814,6 +1814,9 @@ __metadata:
 "@dice-10-000/react-components@workspace:libs/react-components":
   version: 0.0.0-use.local
   resolution: "@dice-10-000/react-components@workspace:libs/react-components"
+  dependencies:
+    "@emotion/styled": 11.9.3
+    "@testing-library/react": 13.3.0
   languageName: unknown
   linkType: soft
 

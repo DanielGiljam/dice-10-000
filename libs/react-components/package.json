@@ -3,5 +3,11 @@
     "version": "0.0.0",
     "license": "MIT",
     "author": "Daniel Giljam (https://github.com/DanielGiljam)",
-    "private": true
+    "private": true,
+    "dependencies": {
+        "@emotion/styled": "11.9.3"
+    },
+    "devDependencies": {
+        "@testing-library/react": "13.3.0"
+    }
 }

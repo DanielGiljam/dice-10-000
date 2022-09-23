@@ -16,6 +16,10 @@
         {
             "files": ["*.js", "*.jsx"],
             "rules": {}
+        },
+        {
+            "files": ["*.tsx", "*.jsx"],
+            "extends": ["@dice-10-000/jsx"]
         }
     ]
 }
