@@ -1,5 +1,6 @@
 import {faker} from "@faker-js/faker";
 import {SupabaseClient, User} from "@supabase/supabase-js";
+
 import {isNullish} from "./utils";
 
 export interface UserWithPassword extends User {

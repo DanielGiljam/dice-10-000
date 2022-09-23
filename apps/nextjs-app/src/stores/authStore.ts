@@ -1,5 +1,6 @@
 import {Session, Subscription} from "@supabase/supabase-js";
 import create from "zustand";
+
 import {supabase} from "../supabaseClient";
 import {isNullish} from "../utils";
 
@@ -38,7 +39,7 @@ export const useAuthStore = create<AuthStore>((set) => {
                     if (event === "SIGNED_OUT") {
                         set({state: "not_authenticated"});
                     }
-                    set({session});
+                    set({session: session!});
                 },
             );
             if (!isNullish(error)) {
@@ -46,19 +47,20 @@ export const useAuthStore = create<AuthStore>((set) => {
             }
             const deactivate = () => {
                 console.log("deactivating authStore");
-                subscription.unsubscribe();
+                subscription!.unsubscribe();
             };
             set({deactivate});
             return deactivate;
         },
         deactivate: () => undefined,
-        session,
-        signOut: () =>
+        session: session!,
+        signOut: () => {
             void supabase.auth.signOut().then(({error}) => {
                 if (!isNullish(error)) {
                     console.error(error);
                 }
-            }),
+            });
+        },
         state: "authenticating",
     };
 });

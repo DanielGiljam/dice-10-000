@@ -1,5 +1,6 @@
 import {Auth as SupabaseAuth} from "@supabase/ui";
 import React from "react";
+
 import {supabase} from "../supabaseClient";
 
 export const Auth: React.FC = () => (
@@ -11,9 +12,9 @@ export const Auth: React.FC = () => (
         </header>
         <main>
             <SupabaseAuth
-                supabaseClient={supabase}
                 className={"max-w-md w-full"}
                 providers={["google", "github"]}
+                supabaseClient={supabase}
             />
         </main>
     </div>

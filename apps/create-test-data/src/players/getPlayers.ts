@@ -1,5 +1,7 @@
 import {SupabaseClient, User} from "@supabase/supabase-js";
+
 import {isNullish} from "../utils";
+
 import {Player} from "./Player";
 
 export const getPlayers = async (

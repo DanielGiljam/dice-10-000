@@ -5,6 +5,7 @@ module.exports = {
     rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-throw-literal": "off",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {

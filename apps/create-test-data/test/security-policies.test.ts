@@ -2,13 +2,15 @@
 
 import fs from "fs";
 import path from "path";
+
 import {faker} from "@faker-js/faker";
-import {createClient, SupabaseClient} from "@supabase/supabase-js";
+import {SupabaseClient, createClient} from "@supabase/supabase-js";
 import {SupabaseQueryBuilder} from "@supabase/supabase-js/dist/module/lib/SupabaseQueryBuilder";
-import {createUsers, UserWithPassword} from "../src/createUsers";
-import {createGames, GameWithEverything, playGames} from "../src/games";
-import {capitalize, isNullish} from "../src/utils";
+
+import {UserWithPassword, createUsers} from "../src/createUsers";
+import {GameWithEverything, createGames, playGames} from "../src/games";
 import {getPlayers} from "../src/players";
+import {capitalize, isNullish} from "../src/utils";
 
 const tableMethodMap = {
     players: {
@@ -272,7 +274,7 @@ beforeAll(async () => {
         Object.entries(tableMethodMap).forEach(([table, methodMap]) => {
             Object.entries(methodMap).forEach(
                 ([method, testImplementation]) => {
-                    const canOrCannot =
+                    const canOrCannot: string =
                         canOrCannotMap[table][method] ?? "cannot";
                     describe(`${canOrCannot} ${method} ${table}`, () => {
                         let result;
@@ -327,7 +329,7 @@ beforeAll(async () => {
                                 describe("the row was actually deleted", () => {
                                     let result;
                                     beforeAll(async () => {
-                                        result = await methodMap["select"](
+                                        result = await methodMap.select(
                                             serviceClient.from(table),
                                         );
                                         console.log(
@@ -344,7 +346,7 @@ beforeAll(async () => {
                                 describe("the row was not actually deleted", () => {
                                     let result;
                                     beforeAll(async () => {
-                                        result = await methodMap["select"](
+                                        result = await methodMap.select(
                                             serviceClient.from(table),
                                         );
                                     });

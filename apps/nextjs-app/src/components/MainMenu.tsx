@@ -1,6 +1,7 @@
 import React from "react";
-import {AuthStore, useAuthStore} from "../stores";
 import shallow from "zustand/shallow";
+
+import {AuthStore, useAuthStore} from "../stores";
 
 const selector = (authStore: AuthStore) => ({
     user: authStore.session?.user,
@@ -24,10 +25,10 @@ export const MainMenu: React.FC = () => {
                 <span>Rest of the app is under construction.</span>
                 <span className={"text-xl"}>🚧🚧🚧</span>
                 <button
-                    onClick={signOut}
                     className={
                         "inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150"
                     }
+                    onClick={signOut}
                 >
                     Sign out
                 </button>

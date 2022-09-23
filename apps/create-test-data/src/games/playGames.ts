@@ -1,7 +1,8 @@
 import {SupabaseClient} from "@supabase/supabase-js";
+
 import {GameWithPlayers} from "./createGames";
 import {initPlayerPoints, noOneHasWon} from "./playerPoints";
-import {playRound, RoundWithEverything} from "./rounds";
+import {RoundWithEverything, playRound} from "./rounds";
 import {updateGame} from "./updateGame";
 
 export interface GameWithEverything extends GameWithPlayers {

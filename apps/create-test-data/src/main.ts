@@ -1,4 +1,5 @@
 import {createClient} from "@supabase/supabase-js";
+
 import {createUsers} from "./createUsers";
 import {createGames, playGames} from "./games";
 import {getPlayers} from "./players";

@@ -1,8 +1,10 @@
-import {Loading} from "./Loading";
-import shallow from "zustand/shallow";
 import React from "react";
+import shallow from "zustand/shallow";
+
 import {AuthStore, useAuthStore} from "../stores";
+
 import {Auth} from "./Auth";
+import {Loading} from "./Loading";
 import {MainMenu} from "./MainMenu";
 
 const selector = (authStore: AuthStore) => ({

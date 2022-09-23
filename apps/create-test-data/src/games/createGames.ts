@@ -1,7 +1,9 @@
-import {SupabaseClient} from "@supabase/supabase-js";
 import {faker} from "@faker-js/faker";
+import {SupabaseClient} from "@supabase/supabase-js";
+
 import {Player} from "../players";
 import {capitalize, isNullish, randomSubset} from "../utils";
+
 import {Game} from "./Game";
 import {PlayerGame} from "./PlayerGame";
 

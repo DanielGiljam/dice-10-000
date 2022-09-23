@@ -1,12 +1,14 @@
 import {SupabaseClient} from "@supabase/supabase-js";
+
 import {Player} from "../../../../players";
 import {Game} from "../../../Game";
 import {Round} from "../../Round";
 import {Turn} from "../Turn";
+
+import {Roll} from "./Roll";
 import {createRoll} from "./createRoll";
 import {generateOutcome} from "./generateOutcome";
 import {optimallyLockDice} from "./optimallyLockDice";
-import {Roll} from "./Roll";
 import {updateRoll} from "./updateRoll";
 
 export const playRoll = async (
@@ -25,7 +27,7 @@ export const playRoll = async (
     );
     const roll = await createRoll(supabase, game, round, turn, player, index);
     const outcome = generateOutcome(numberOfDice);
-    const locked_dice = optimallyLockDice(outcome);
+    const locked_dice = optimallyLockDice(outcome); // eslint-disable-line @typescript-eslint/naming-convention
     const update = {ended_at: new Date(), outcome, locked_dice};
     const updatedRoll = await updateRoll(supabase, roll, update);
     console.log(

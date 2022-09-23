@@ -1,5 +1,7 @@
 import {SupabaseClient} from "@supabase/supabase-js";
+
 import {isNullish} from "../../../utils";
+
 import {Turn} from "./Turn";
 
 export const updateTurn = async (
