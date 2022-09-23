@@ -3,6 +3,7 @@
     "version": 2,
     "projects": {
         "create-test-data": "apps/create-test-data",
+        "eslint-configs/javascript": "libs/eslint-configs/javascript",
         "nextjs-app": "apps/nextjs-app",
         "nextjs-app-e2e": "apps/nextjs-app-e2e"
     }
