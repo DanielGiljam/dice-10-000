@@ -63,6 +63,7 @@
     },
     "packageManager": "yarn@3.2.2",
     "workspaces": [
-        "apps/*"
+        "apps/*",
+        "libs/eslint-configs/*"
     ]
 }

@@ -1747,6 +1747,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dice-10-000/eslint-config-javascript@workspace:libs/eslint-configs/javascript":
+  version: 0.0.0-use.local
+  resolution: "@dice-10-000/eslint-config-javascript@workspace:libs/eslint-configs/javascript"
+  languageName: unknown
+  linkType: soft
+
+"@dice-10-000/eslint-config-jsx@workspace:libs/eslint-configs/jsx":
+  version: 0.0.0-use.local
+  resolution: "@dice-10-000/eslint-config-jsx@workspace:libs/eslint-configs/jsx"
+  languageName: unknown
+  linkType: soft
+
+"@dice-10-000/eslint-config-typescript@workspace:libs/eslint-configs/typescript":
+  version: 0.0.0-use.local
+  resolution: "@dice-10-000/eslint-config-typescript@workspace:libs/eslint-configs/typescript"
+  languageName: unknown
+  linkType: soft
+
 "@dice-10-000/nextjs-app-e2e@workspace:apps/nextjs-app-e2e":
   version: 0.0.0-use.local
   resolution: "@dice-10-000/nextjs-app-e2e@workspace:apps/nextjs-app-e2e"
