@@ -12,13 +12,10 @@
         "@xstate/cli": "^0.3.1",
         "@xstate/inspect": "^0.7.0",
         "@xstate/react": "^3.0.0",
-        "autoprefixer": "^10.4.8",
         "next": "12.2.3",
-        "postcss": "^8.4.14",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "rxjs": "^7.5.6",
-        "tailwindcss": "^3.1.7",
         "xstate": "^4.32.1",
         "zustand": "^4.1.1"
     }

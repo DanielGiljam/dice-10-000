@@ -2390,13 +2390,10 @@ __metadata:
     "@xstate/cli": ^0.3.1
     "@xstate/inspect": ^0.7.0
     "@xstate/react": ^3.0.0
-    autoprefixer: ^10.4.8
     next: 12.2.3
-    postcss: ^8.4.14
     react: 18.2.0
     react-dom: 18.2.0
     rxjs: ^7.5.6
-    tailwindcss: ^3.1.7
     xstate: ^4.32.1
     zustand: ^4.1.1
   languageName: unknown
@@ -2416,6 +2413,7 @@ __metadata:
   resolution: "@dice-10-000/react-components@workspace:libs/react-components"
   dependencies:
     "@emotion/styled": 11.9.3
+    "@nrwl/react": 14.5.1
     "@storybook/react": ~6.5.9
     "@testing-library/react": 13.3.0
   languageName: unknown
@@ -7811,7 +7809,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.7, autoprefixer@npm:^10.4.8":
+"autoprefixer@npm:10.4.7":
+  version: 10.4.7
+  resolution: "autoprefixer@npm:10.4.7"
+  dependencies:
+    browserslist: ^4.20.3
+    caniuse-lite: ^1.0.30001335
+    fraction.js: ^4.2.0
+    normalize-range: ^0.1.2
+    picocolors: ^1.0.0
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 0e55d0d19806c672ec0c79cc23c27cf77e90edf2600670735266ba33ec5294458f404baaa2f7cd4cfe359cf7a97b3c86f01886bdbdc129a4f2f76ca5977a91af
+  languageName: node
+  linkType: hard
+
+"autoprefixer@npm:^10.4.7":
   version: 10.4.8
   resolution: "autoprefixer@npm:10.4.8"
   dependencies:
@@ -8924,7 +8940,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001400":
+"caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001335, caniuse-lite@npm:^1.0.30001400":
   version: 1.0.30001410
   resolution: "caniuse-lite@npm:1.0.30001410"
   checksum: 0b1479dc13a736d244afe0f941bdd4d1ce26a73023f017b653f101d6e9398dee527b60bc6abfcd002e873240923cc766687ed9739dc233c47bcbf2a7673c3864
@@ -10514,6 +10530,7 @@ __metadata:
     "@types/react-dom": 18.0.6
     "@typescript-eslint/eslint-plugin": ^5.29.0
     "@typescript-eslint/parser": ^5.29.0
+    autoprefixer: 10.4.7
     babel-jest: 27.5.1
     babel-loader: 8.1.0
     core-js: ^3.6.5
@@ -10531,12 +10548,14 @@ __metadata:
     next: 12.2.3
     nx: 14.5.1
     patch-package: ^6.4.7
+    postcss: 8.4.14
     postinstall-postinstall: ^2.1.0
     prettier: ^2.6.2
     react: 18.2.0
     react-dom: 18.2.0
     react-test-renderer: 18.2.0
     regenerator-runtime: 0.13.7
+    tailwindcss: 3.1.6
     ts-jest: 27.1.4
     ts-node: ~10.8.0
     tslib: ^2.3.0
@@ -16073,7 +16092,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lilconfig@npm:^2.0.3, lilconfig@npm:^2.0.5, lilconfig@npm:^2.0.6":
+"lilconfig@npm:^2.0.3, lilconfig@npm:^2.0.5":
   version: 2.0.6
   resolution: "lilconfig@npm:2.0.6"
   checksum: 40a3cd72f103b1be5975f2ac1850810b61d4053e20ab09be8d3aeddfe042187e1ba70b4651a7e70f95efa1642e7dc8b2ae395b317b7d7753b241b43cef7c0f7d
@@ -21556,9 +21575,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.1.7":
-  version: 3.1.7
-  resolution: "tailwindcss@npm:3.1.7"
+"tailwindcss@npm:3.1.6":
+  version: 3.1.6
+  resolution: "tailwindcss@npm:3.1.6"
   dependencies:
     arg: ^5.0.2
     chokidar: ^3.5.3
@@ -21569,7 +21588,7 @@ __metadata:
     fast-glob: ^3.2.11
     glob-parent: ^6.0.2
     is-glob: ^4.0.3
-    lilconfig: ^2.0.6
+    lilconfig: ^2.0.5
     normalize-path: ^3.0.0
     object-hash: ^3.0.0
     picocolors: ^1.0.0
@@ -21587,7 +21606,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: adbc9869b72f741e9a0fc281b79710863617a588fd5d897316b676f789b6482c79f46f324223300ca962afbe55bed3ec16a37a6ccf4bb2c99c53cf8c5dd9700d
+  checksum: 90719c6fd0dcdda5c8e2882ad421048c9dd90890e0c118d12ff3ec31adba53eb2df8fed1ed203e728e5b32297e1cc207df463a6b196d37344a63fde9f67c52b6
   languageName: node
   linkType: hard
 
