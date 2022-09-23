@@ -8,6 +8,7 @@
         "eslint-config-typescript": "libs/eslint-configs/typescript",
         "nextjs-app": "apps/nextjs-app",
         "nextjs-app-e2e": "apps/nextjs-app-e2e",
-        "react-components": "libs/react-components"
+        "react-components": "libs/react-components",
+        "react-components-e2e": "apps/react-components-e2e"
     }
 }
